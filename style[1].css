@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+.container {
+  margin-top: 20vh;
+}
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid pink;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4s steps(40, end), blink .75s step-end infinite;
+  font-size: 2em;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: pink }
+}
+.heartbeat {
+  animation: heartbeat 1.5s infinite;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1) }
+  50% { transform: scale(1.2) }
+}
+.magic-btn {
+  background-color: hotpink;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1em;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px pink;
+  margin-top: 30px;
+}
+.gift {
+  font-size: 1.2em;
+  margin-top: 30px;
+  display: none;
+}
+.gift.visible {
+  display: block;
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
